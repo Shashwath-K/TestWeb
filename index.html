@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Vit-5</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="form3.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+   <style type="text/css">
+      *{
+         padding: 0px;
+         margin: 0px;
+         box-sizing: border-box;
+      }
+      body {
+           color: black;
+           font-size: 25px;
+           font-family: "Titillium Web",sans-serif;
+          }
+
+      .dark-mode {
+            background-color: black;
+            color: white;
+            }
+      .hed0{
+         width: 100%;
+         height: 150px;   
+      }
+      .hed0 .do{
+         position: absolute;
+         top: 0;left: 0;
+      }
+      .dsh ul{
+        padding: 0;
+        list-style: none;
+        background: none;
+        font-size: 20px;
+        font-family:"Century Gothic";
+        text-decoration-color: white;
+        float: right;
+        margin-right: 450px;
+        position: relative;
+        top: -50px;
+        color:black;
+      }
+      .dsh ul li{
+         display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: center;
+        color: black;
+      }
+      .dsh ul li:hover {
+         background-color: #ddd;
+         border: none;
+         color: black;
+         transition: 0.3s ease;
+         }
+
+      .dsh ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: black;
+        text-decoration: none;
+      }
+      .dsh ul li a:hover {
+        color: #fff;
+        background: #939393;
+        transition: 0.3s ease;
+        border: none;
+
+        }
+        .dsh ul li ul.ddn {
+        min-width: 100%;
+        transition: 0.9s ease;
+        background: #e6e6e6;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        top: 30px;
+        left: 0;
+      }
+      .dsh ul li:hover ul.ddn {
+        display: block;
+      }
+      .dsh ul li ul.ddn li {
+        display: block;
+      }
+      .dsh ul li ul.ddn:hover {
+            color: #bfbfbf rgb(191, 191, 191) hsl(0, 0%, 75%);
+            transition: 0.4s ease;
+      }
+      .container1#blur. active{
+         filter: blur(20px);
+         pointer-events: none;
+         user-select: none;
+         }
+      .head0 section{
+         width: 100%;
+         height: 700px;
+         background: linear-gradient(-50deg,#80e5ff,#80ffe5,#99bbff,#ccb3ff,#ffb3ff,#ffb3ff,#99bbff);
+         position: relative;
+         animation: change 3s ease-in-out;
+      }
+      @keyframes change{
+         0%{
+            background-position: 0 50\;
+         }
+         50%{
+            background-position: 100 50\;
+         }
+         100%{
+            background-position: 0 50\;
+         }
+      }
+      .hed1{
+
+         height: 500px;
+      }
+      .hed1 img {
+         vertical-align: middle;
+         display: inline-block;
+         position: relative;
+         margin-left: 20%;
+         top: -250px;
+      }
+      .hed1 .wva{
+            position: relative;
+            z-index: 5;
+            opacity: 100;
+         }
+      .hed1 .tab2{
+         position: relative;
+         font-family: "Times New Roman";
+         font-size: 3rem;
+         margin-left: 20%;
+         color: white;
+         top: -300px;
+         left: -100px;
+      }
+      
+         .wrapper {
+         animation: scroll 70s linear infinite;
+         background: url(), #273036;
+
+         background-size:100%;
+         color: #eee;
+         height: 500px;
+         width: 100%;
+         perspective:1000%;
+         perspective-origin: 50% 50%;
+         }
+
+         @keyframes scroll {
+          99%{
+            background-position:0px -500px;
+         }
+         }
+      .btn1{
+         background-color: none;
+         border-color: #4CAF50;
+         color: #4CAF50;
+         padding: 15px 32px;
+         border: 5px solid #4CAF50;
+         float:  right;
+         margin-right: 30px;
+         margin-top: 50px;
+         border-radius: 20px;
+         text-align: center;
+         text-decoration: none;
+         font-size: 16px;
+         cursor: pointer;
+         opacity: 0.5;
+         }
+         .btn1:hover{
+            background-color:#4CAF50 ;
+            color: white;
+            transition: 0.3s ease;
+            opacity: 1;
+         }
+         .btn2{
+         background-color: none;
+         border-color: #4CAF50;
+         color: #4CAF50;
+         padding: 15px 32px;
+         border: 5px solid #4CAF50;
+         float: right;
+         margin-right: 30px;
+         margin-top: 50px;
+         border-radius: 20px;
+         opacity: 0.5;
+         text-align: center;
+         text-decoration: none;
+         font-size: 16px;
+         cursor: pointer;
+         }
+         .btn2:hover{
+            background-color:#4CAF50 ;
+            color: white;
+            transition: 0.3s ease;
+            opacity: 1;
+         }
+         .hed2{
+         width: 100%;
+         height: 800px;
+         background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://as2.ftcdn.net/v2/jpg/02/34/32/71/1000_F_234327109_VyqWnzIb5FRaVnUUwKsoh3R18ZEC4epP.jpg") repeat fixed 100% ;
+         background: cover;
+         background-repeat: no-repeat;
+         background-size: 100% 800px;
+         z-index: 20 ;
+      }  
+      .tile1 p{
+         display: inline-block;
+         position: relative;
+         color: #804d00;
+      }       
+      .tile1 p:after{
+         width: 50%;
+         background-color: #ffdb4d;
+         bottom: -.1em;
+         left: 50%;
+         position: absolute;
+         transform: translate(-50%);
+         height: 4px;
+         content: "";
+      }
+      .hed3{
+         width: 100%;
+         height: 450px;
+         background: none;
+      }
+      .hed4{
+         width: 100%;
+         height: 100px;
+         background: black;
+      }
+   </style>
+      <script type="text/javascript">
+         function brm()
+         {
+            document.getElementById('bb1').style.background-color="background-color: rgba(0,0,0,0.4);"
+         }
+      </script>
+      <script type="text/javascript">
+         function openFormL() {
+         document.getElementById("myForm").style.display = "block";
+         }
+
+         function closeFormL() {
+         document.getElementById("myForm").style.display = "none";
+         }
+         function openFormR() {
+         document.getElementById("myForm1").style.display = "block";
+         var blur=document.getElementByClassName('btn1   ');
+            blur.classList.toggle('active');
+         }
+
+         function closeFormR() {
+         document.getElementById("myForm1").style.display = "none";
+         }
+      </script>
+      <script type="text/javascript">
+         function toggle(){
+            var blur=document.getElementById('blur');
+            blur.classList.toggle('active');
+         }
+      </script>
+</head>
+<body><div class="head0"><div class="continer1" id="blur"><section>
+   <div class="hed0">
+   <img src="https://vitvara.com/wp-content/uploads/2021/08/vitvara-1-768x327.png" height=106 width=250 style="position:relative;left: 20px;top:15px;";/>
+   <button class="btn1" onclick="openFormL();">Login</button>
+   <button class="btn2" onclick="openFormR();">Register</button>
+       <div class="dsh">
+            <ul>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#ab">ABOUT US</a></li>
+               <li><a href="#">INTERNSHIP &#9662</a>
+                <ul class="ddn"><br/>
+                <li><a href="#">ComputerScience</a></li>
+             <li><a href="#">Electonics&Communication</a></li><br/>
+            </ul></li>
+               <li><a href="#">CONTACT</a></li>
+            </ul>
+         </div>
+   </div>
+   <img src="Teamwork_of_tiny_people_with_.png" width="695" height="365" style="position:relative;left:35px; top:40px" ;>
+   <div class="tile1" style="float:right; font-size: 50px;margin-right: 10%;position: relative;top:90px;";><p><b>We are specialized for</b></p>
+   <ul style="font-size: 35px;list-style: none;color: #666600;">
+      <li>Computer and Web applications</li>
+      <li>Android application development</li>
+      <li>HW & PCB design</li>
+      <li>Atal Lab management</li>
+   </ul></div>
+   </section></div>
+   
+   <div class="form-popup" id="myForm">
+      <form method="POST" action="http:\\localhost\beta1\index.php" class="form-container">
+        <h1>Login</h1>
+         <div class="input-group">
+            <input type="text" placeholder="Email" name="email"style="width:100%;" required/>
+         </div>
+         <div class="input-group">
+            <input type="password" placeholder="Password" name="password" style="width:100%;"required>
+         </div>
+         <div class="input-group">
+            <button name="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="closeFormL()">Close</button>
+         </div>
+    
+        
+      </form>
+    </div>
+      <div class="form-popup" id="myForm1">
+      <form method="POST" action="http:\\localhost\beta1\register.php" class="form-container">
+        <h1>Register</h1>
+         <div class="input-group">
+         <table><tr>
+            <td><input type="text" placeholder ="First name" name="fname" size="13" required/></td>
+            <td><input type="text" placeholder ="Last name" name="lname" size="17" /></td></tr></table>
+            <table class="tab1"><tr>
+            <input type="text" placeholder ="Username" name="username"required/></tr>
+            <tr><table class="tab1">
+            <input type="password" placeholder ="Password" name="password"required></tr>
+            <input type="password" placeholder ="Confirm Password" name="cpassword"required></tr></table>
+            <table>
+            <tr><td><input type="text" placeholder="Phone_no" name="phone" size="18" required/></td>
+            <td><input type="date" name="date"required/></td></tr></table>
+            <table class="tab1"><tr>
+           <input type="text" placeholder ="E-mail" name="email"required></tr>
+         </table>
+            <button name="submit" class="btn">Register</button>
+            <button type="button" class="btn cancel" onclick="closeFormR()">Close</button>
+      </form>
+   </div>
+    </div></section>
+</div>
+   <div class="head01">
+      <section>
+         
+      </section>
+   </div>
+   <div class="hed1"><article class="wrapper">
+         <h3 style="text-align: center;font-family:Titillium Web;color:white;padding-bottom:50px;position: relative;top:25px;";><a name="#ab">About Us</a></h3>
+         <div style="padding-right:150px;padding-left:150px;padding-bottom:35px;font-family:Titillium Web;";>
+            
+                                  Vitvara is Mangalore based startup company established in 2011. Vitvara was nurtured by a group of entrepreneurs with a sole mission of establishing a dedicated Research &amp; Development Cell to fertilize the innovations of budding engineers. We are specialized for Software and educational services.                
+         </div>
+         <div style="padding-right:150px;padding-left:150px;padding-bottom:35px;font-family:Titillium Web;";>
+                        We developed 1000 plus engineering projects in various fields and also industrial related applications viz. web design, software applications, android applications, electronics, robotics, mechanical, mechatronics, software and many more…
+         </div>
+         <div style="padding-right:150px;padding-left:150px;padding-bottom:50px;font-family:Titillium Web;z-index:10";>
+            The new branch at Bangalore deliver a complete solution to software and educational services. It will be a one stop shop for all educational and Industry related software like websites, web-application windows application, android application, electronics, electrical and mechanical needs of the customer and hope to augment our customer experience through this branch
+         </div> </article> 
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,288L48,256C96,224,192,160,288,165.3C384,171,480,245,576,277.3C672,309,768,299,864,245.3C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            <p class="tab2"><b>We Are...</b></p>
+            <img src="https://vitvara.com/wp-content/uploads/2021/08/iso.png" height="100" width="100">
+            <img src="https://vitvara.com/wp-content/uploads/2021/08/QCI.png" height="100" width="100">
+            <img src="https://vitvara.com/wp-content/uploads/2021/08/GeM.png" height="100" width="100">
+         </svg>       
+   </div>
+   <div class="hed2">
+         
+</div>
+   <div class="hed3">
+      <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.9406159995406!2d74.83739829999999!3d12.897057999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35bd3738d373f%3A0x8773d9b865343f6e!2sVitvara%20Technologies!5e1!3m2!1sen!2sin!4v1651233666360!5m2!1sen!2sin" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div><footer>
+   <div class="hed4">
+      <p style="position: relative;left: 20px;top: 30px;font-family:Titillium Web ;color:white;">Not protected by any copyright laws</p>
+      <p style="float: right;position: relative;margin-right: 50px;font-family:Titillium Web ;color:white;">Connect On:<a href="https://www.facebook.com/vitvara.technologies/"><img style="position: relative;left: 10px;" src="https://www.pinclipart.com/picdir/big/560-5604487_facebook-logo-png-white-facebook-logo-png-white.png"height="25" width="25"></a><a href="https://in.linkedin.com/in/shrikanthka31"><img style="position: relative;left: 22px;top:1px;" src="https://pnggrid.com/wp-content/uploads/2021/05/Linkedin-Logo-White-Circle-1024x1024.png"height="27" width="27" style="top:1px;";></a>
+         <a href="#"><img style="position: relative;left: 30px;top:6px;" src="https://icon-library.com/images/phone-icon-png-white/phone-icon-png-white-0.jpg"height="35" width="27";></a></p>
+   </div>
+   </footer>
+</div>
+</body>
+</html>

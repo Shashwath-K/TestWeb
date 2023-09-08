@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Vit-5</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+   <style type="text/css">
+      *{
+         padding: 0px;
+         margin: 0px;
+         box-sizing: border-box;
+      }
+      body {
+           color: black;
+           font-size: 25px;
+           font-family: 'Titillium Web',sans-serif;
+          }
+
+      .dark-mode {
+            background-color: black;
+            color: white;
+            }
+      .hed0{
+         width: 100%;
+         height: 150px;   
+      }
+      .hed0 .do{
+         position: absolute;
+         top: 0;left: 0;
+      }
+      .dsh ul{
+        padding: 0;
+        list-style: none;
+        background: none;
+        font-size: 20px;
+        font-family:"Century Gothic";
+        text-decoration-color: white;
+        float: right;
+        margin-right: 450px;
+        position: relative;
+        top: -50px;
+        color:black;
+      }
+      .dsh ul li{
+         display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: center;
+        color: black;
+      }
+      .dsh ul li:hover {
+         background-color: #ddd;
+         border: none;
+         color: black;
+         transition: 0.3s ease;
+         }
+
+      .dsh ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: black;
+        text-decoration: none;
+      }
+      .dsh ul li a:hover {
+        color: #fff;
+        background: #939393;
+        transition: 0.3s ease;
+        border: none;
+
+        }
+        .dsh ul li ul.ddn {
+        min-width: 100%;
+        transition: 0.9s ease;
+        background: #e6e6e6;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        top: 30px;
+        left: 0;
+      }
+      .dsh ul li:hover ul.ddn {
+        display: block;
+      }
+      .dsh ul li ul.ddn li {
+        display: block;
+      }
+      .dsh ul li ul.ddn:hover {
+            color: #bfbfbf rgb(191, 191, 191) hsl(0, 0%, 75%);
+            transition: 0.4s ease;
+      }
+      .head0 section{
+         width: 100%;
+         height: 700px;
+         background:linear-gradient(-50deg,#80e5ff,#80ffe5,#99bbff,#ccb3ff,#ffb3ff,#ffb3ff,#99bbff);
+         position: relative;
+         animation: change 3s ease-in-out;
+      }
+      @keyframes change{
+         0%{
+            background-position: 0 50\;
+         }
+         50%{
+            background-position: 100 50\;
+         }
+         100%{
+            background-position: 0 50\;
+         }
+      }
+      .hed1{
+
+         height: 500px;
+      }
+         .wrapper {
+         animation: scroll 70s linear infinite;
+         background: url(), #273036;
+
+         background-size:100%;
+         color: #eee;
+         height: 500px;
+         width: 100%;
+         perspective:1000%;
+         perspective-origin: 50% 50%;
+         }
+
+         @keyframes scroll {
+          99%{
+            background-position:0px -500px;
+         }
+         }
+      .btn1{
+         background-color: none;
+         border-color: #4CAF50;
+         color: #4CAF50;
+         padding: 15px 32px;
+         border: 5px solid #4CAF50;
+         float:  right;
+         margin-right: 30px;
+         margin-top: 50px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         cursor: pointer;
+         opacity: 0.5;
+         }
+         .btn1:hover{
+            background-color:#4CAF50 ;
+            color: white;
+            transition: 0.3s ease;
+            opacity: 1;
+         }
+         .btn2{
+         background-color: none;
+         border-color: #4CAF50;
+         color: #4CAF50;
+         padding: 15px 32px;
+         border: 5px solid #4CAF50;
+         float:  right;
+         margin-right: 30px;
+         margin-top: 50px;
+         opacity: 0.5;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         cursor: pointer;
+         }
+         .btn2:hover{
+            background-color:#4CAF50 ;
+            color: white;
+            transition: 0.3s ease;
+            opacity: 1;
+         }
+         .wva{
+            position: relative;
+            z-index: 5;
+            opacity: 100;
+         }
+         .hed2{
+         width: 100%;
+         height: 800px;
+         background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://as2.ftcdn.net/v2/jpg/02/34/32/71/1000_F_234327109_VyqWnzIb5FRaVnUUwKsoh3R18ZEC4epP.jpg") repeat fixed 100% ;
+         background: cover;
+         background-repeat: no-repeat;
+         background-size: 100% 800px;
+         z-index: 20 ;
+      }         
+
+      .hed3{
+         width: 100%;
+         height: 450px;
+         background: none;
+      }
+      .hed4{
+         width: 100%;
+         height: 100px;
+         background: black;
+      }
+   </style>
+   <script type="text/javascript">
+      function dmo() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      
+      </script>
+</head>
+<body><div class="head0"><section>
+   <div class="hed0"><button class="do" onclick="dmo()" style="visibility: hidden;">Dark Mode</button>
+   <img src="https://vitvara.com/wp-content/uploads/2021/08/vitvara-1-768x327.png" height=106 width=250 style="position:relative;left: 20px;top:15px;";/>
+   <a href="http://localhost/sources/index.php"><button class="btn1">Login</button></a>
+   <a href="http://localhost/sources/register.php"><button class="btn2">Register</button></a>
+       <div class="dsh">
+            <ul>
+               <li><a href="#">HOME</a></li>
+               <li><a href="#ab">ABOUT US</a></li>
+               <li><a href="#">INTERNSHIP &#9662</a>
+                <ul class="ddn"><br/>
+                <li><a href="#">ComputerScience</a></li>
+             <li><a href="#">Electonics&Communication</a></li><br/>
+            </ul></li>
+               <li><a href="#">CONTACT</a></li>
+            </ul>
+         </div>
+   </div>
+   <img src="Teamwork_of_tiny_people_with_.png" width="695" height="365" style="position:relative;left:35px; top:40px" ;>
+   <h3 style="float:right;margin-right:30px;">We a<u>re specialized</u> for</h3>
+</section>
+</div>
+   <div class="head01">
+      <section>
+         
+      <section>
+   </div>
+   <div class="hed1"><article class="wrapper">
+         <h3 style="text-align: center;font-family:Titillium Web;color:white;padding-bottom:50px;position: relative;top:25px;";><a name="#ab">About Us</a></h3>
+         <div style="padding-right:150px;padding-left:150px;padding-bottom:35px;font-family:Titillium Web;";>
+            
+                                  Vitvara is Mangalore based startup company established in 2011. Vitvara was nurtured by a group of entrepreneurs with a sole mission of establishing a dedicated Research &amp; Development Cell to fertilize the innovations of budding engineers. We are specialized for Software and educational services.                
+         </div>
+         <div style="padding-right:150px;padding-left:150px;padding-bottom:35px;font-family:Titillium Web;";>
+                        We developed 1000 plus engineering projects in various fields and also industrial related applications viz. web design, software applications, android applications, electronics, robotics, mechanical, mechatronics, software and many more…
+         </div>
+         <div style="padding-right:150px;padding-left:150px;padding-bottom:50px;font-family:Titillium Web;z-index:10";>
+            The new branch at Bangalore deliver a complete solution to software and educational services. It will be a one stop shop for all educational and Industry related software like websites, web-application windows application, android application, electronics, electrical and mechanical needs of the customer and hope to augment our customer experience through this branch
+         </div> </article> 
+         <svg clas="wva" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,320L40,309.3C80,299,160,277,240,272C320,267,400,277,480,250.7C560,224,640,160,720,154.7C800,149,880,203,960,192C1040,181,1120,107,1200,69.3C1280,32,1360,32,1400,32L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>       
+   </div>
+   <div class="hed2">
+         
+</div>
+   <div class="hed3">
+      <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.9406159995406!2d74.83739829999999!3d12.897057999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35bd3738d373f%3A0x8773d9b865343f6e!2sVitvara%20Technologies!5e1!3m2!1sen!2sin!4v1651233666360!5m2!1sen!2sin" width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   </div><footer>
+   <div class="hed4">
+      <p style="position: relative;left: 20px;top: 30px;font-family:Titillium Web ;color:white;">Not protected by any copyright laws</p>
+      <p style="float: right;position: relative;margin-right: 50px;font-family:Titillium Web ;color:white;">Connect On:<a href="https://www.facebook.com/vitvara.technologies/"><img style="position: relative;left: 10px;" src="https://www.pinclipart.com/picdir/big/560-5604487_facebook-logo-png-white-facebook-logo-png-white.png"height="25" width="25"></a><a href="https://in.linkedin.com/in/shrikanthka31"><img style="position: relative;left: 22px;top:1px;" src="https://pnggrid.com/wp-content/uploads/2021/05/Linkedin-Logo-White-Circle-1024x1024.png"height="27" width="27" style="top:1px;";></a>
+         <a href="#"><img style="position: relative;left: 30px;top:6px;" src="https://icon-library.com/images/phone-icon-png-white/phone-icon-png-white-0.jpg"height="35" width="27";></a></p>
+   </div>
+   </footer>
+</body>
+</html>

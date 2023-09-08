@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #FFA4FF2B;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header{
+            display:block;
+            background-color:red;
+            margin-right:700px;
+            position: relative;left:30px;
+            border-radius:10px;
+            color: red;
+        }
+        ul{
+         float:right;
+         padding:50px;
+         position: absolute;
+         left:800px;
+         top:10px;
+         list-style-type:none;
+         display:inline-block;
+         }
+       marquee{
+           display:block;
+           
+           margin-right:550px;
+           position: relative;
+           top:20px;left:55px;
+           background-color:purple;
+           border-radius:10px;
+       }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="#">Courses offered</a>
+    <a href="#">Objectives</a>
+    <a href="#">Contact us</a>
+  </div>
+</div>
+</body>
+</html>

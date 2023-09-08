@@ -1,0 +1,23 @@
+//log important
+//(rgba(7,40,195,0.8);)
+</iframe><div class="hp3"style="position:relative;left:10px;";><h3><ul>Find Us on Maps</ul></h3>
+      <p>Try reaching out using the location services provided by Google</p><button onclick="expMap();">Click Here to Expand the view</button></div>
+      https://www.pngkit.com/png/full/96-960971_abstract-blue-wavy-dotted-shapes-transparent-background-abstract.png
+
+
+      <td><select name="month">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select></td></tr>
+
+    CREATE TABLE `log_dat`.`mnthlyoe` ( `atlid` VARCHAR(255) NOT NULL , `month` VARCHAR(255) NOT NULL , `ATLWorkshops` VARCHAR(255) NOT NULL , `ATLMoni` VARCHAR(255) NOT NULL , `ATLEx` VARCHAR(255) NOT NULL , `Patents` VARCHAR(255) NOT NULL , `PurConsume` VARCHAR(255) NOT NULL , `lcp1` VARCHAR(255) NOT NULL , `lcp2` VARCHAR(255) NOT NULL , `aep1` VARCHAR(255) NOT NULL , `aep2` VARCHAR(255) NOT NULL , `fra1` VARCHAR(255) NOT NULL , `fra2` VARCHAR(255) NOT NULL , `apsc1` VARCHAR(255) NOT NULL , `apsc2` VARCHAR(255) NOT NULL , `msc1` VARCHAR(255) NOT NULL , `msc2` VARCHAR(255) NOT NULL , `nsa1` VARCHAR(255) NOT NULL , `nsa2` VARCHAR(255) NOT NULL , `naw1` VARCHAR(255) NOT NULL , `nam1` VARCHAR(255) NOT NULL , `nei1` VARCHAR(255) NOT NULL , `tsm1` VARCHAR(255) NOT NULL , PRIMARY KEY (`atlid`(255))) ENGINE = InnoDB;

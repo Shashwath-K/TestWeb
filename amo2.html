@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Accounts Section</title>
+	<style>
+        body{
+            margin: 2;
+            padding: 2;
+        }
+        .tbl{
+            width: 100%;
+        }
+	.tbl tr th{
+	  padding: 12px 20px;
+	}
+	.tbl{
+	    background: linear-gradient(
+    to right,
+    #fffbd5 0%,
+    #7FFFD4 50%,
+    #cac531 100%
+);
+	}
+	
+	input[type=number]{
+	  width: 100%;
+  padding: 20px 20px;
+  background-color: #FFF8DC;
+  margin: 4px 0;
+  border: 2px solid black;;
+  border-radius: 8px; 
+  box-sizing: border-box;
+  color: red;
+  
+	}
+    input[type=month]{
+      width: 100%;
+  padding: 20px 20px;
+  background-color: #FFF8DC;
+  margin: 4px 0;
+  border: 2px solid black;;
+  border-radius: 8px; 
+  box-sizing: border-box;
+  color: red;
+}
+	input[type=text]{
+	    width: 60%;
+	    padding: 12px 20px;  	              
+	    border-bottom: dashed red;
+	    background-color: #FFF8DC;
+	}
+	
+	input:focus::placeholder { 
+	color: red;
+	 }
+
+	
+	
+</style>
+	
+</head>
+
+<body>
+<form method="POST" action="http://localhost/beta1/accsec.php">
+<table border=2 class="tbl" id="id1">
+    <tr><td>Monthly Report of the Month</td><td><input type="month" name="month"></td></tr>
+    <tr><td>The ATL code:</td><td><input type="number" name="atlid"></td></tr>
+<tr class="th">
+<th>Monthly operational expenditure</th>
+<th>Amount(in RS.) spent from AIM Grant</th></tr>
+<tr>
+<td>ATL workshops</td>
+    <td>
+    <input type="number" id="a" name="atlw" class="A"/></td>
+</tr>   
+    <td>ATL monitoring sessions</td>
+    <td><input type="number" name="atlmon"class="A"/>
+</tr>
+<tr>
+    <td>ATL exibition/innovation camps </td></td>
+    <td><input type="number" name="atlex"class="A"/></td>
+</tr>
+<tr>
+    <td>Patents/copyrights</td>
+    <td><input type="number" name="paten"class="A"/></td>
+</tr>
+<tr>
+    <td>Purchase of consumable/spares</td>
+    <td><input type="number" name="purconsume"class="A"/></td>
+</tr>
+</table><br/><br/>
+
+<table border=2 class="tbl" id="id1">
+<tr class="th">
+<th>Monthly capital expenditure</th>
+<th>Amount(in RS.) spent from AIM Grant</th>
+<th>Amount(in RS.) spent from other sources</th></tr>
+<tr>
+<td>Laptops/Computers/Projectors-(limit 1.5 lacs)</td>
+    <td>
+    <input type="number" id="a" name="lcp1" class="A" onclick="myFun();"/></td>
+    <td>
+    <input type="number" id="a" name="lcp2" class="A" onclick="myFun();"/></td>
+</tr>   
+    <td>ATL Equipment Packages(Packages p1,p2,p3,p4)-(limit 6 lacs)</td>
+    <td><input type="number" name="aep1"class="A"/>
+    <td><input type="number" name="aep2"class="A"/></td>
+</tr>
+<tr>
+    <td>Furniture and Refurbishment of the ATL-(limit 1.5 lacs)</td></td>
+    <td><input type="number" name="fra1"class="A"/></td>
+    <td><input type="number" name="fra2"class="A"/></td>
+</tr>
+<tr>
+    <td>Advanced Prototyping and School specific Equipments-(limit 50 thousand)</td>
+    <td><input type="number" name="apsc1"class="A"/></td>
+    <td><input type="number" name="apsc2"class="A"/></td>
+</tr>
+<tr>
+    <td>Misc-(limit 50 thousand)<br>
+    <input type="text" name="" placeholder="(Please specify)" class="A"/></td>
+    <td><input type="number" name="msc1"class="A"/></td>
+    <td><input type="number" name="msc2"class="A"/></td>
+</tr>
+<tr>
+<td>Number of students using the ATL in the current month</td>
+    <td>
+    <input type="number" id="a" name="nsa1" class="A" onclick="myFun();"/></td>
+    <td>
+    <input type="number" id="a" name="nsa2" class="A" onclick="myFun();"/></td>
+</tr>   
+    <td>Number of ATL workshops conducted in the current month</td>
+    <td></td>
+    <td><input type="number" name="naw1"class="A"/></td>
+</tr>
+<tr>
+    <td>Number of ATL monitoring sessions conducted in the current month</td></td>
+    <td></td>
+    <td><input type="number" name="nam1"class="A"/></td>
+</tr>
+<tr>
+    <td>Number of exibitions, innovations, camps conductedin the current month</td>
+    <td></td>
+    <td><input type="number" name="nei1"class="A"/></td>
+</tr>
+<tr>
+    <td>Training sessions conducted in this month<br>
+     <td></td>
+    <td><input type="number" name="tsm1"class="A"/></td>
+</tr>
+
+</table>
+<input type="submit" name="Submit">
+</form>
+
+ <script>
+   function myFun() {
+      document.getElementById("id1").autofocus = true;  
+  }
+  </script>
+</body>
+
+</html>

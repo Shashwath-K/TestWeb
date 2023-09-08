@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table-form</title>
+	<style type="text/css">
+		body{
+			
+			background: #f4f4f4;
+			font-family: "Titillium Web",sans-serif;
+		}
+		.form1 input{
+			display: block;
+			border: 2px solid #e7e7e7;
+    		padding: 5px 20px;
+    		font-size: 1rem;
+    		border-radius: 30px;
+    		background: #d9ffb3;
+    		outline: none;
+    		transition: .3s;
+		}
+		.form1 input:hover{
+			background: #8cff1a;
+			transition: 0.3s ease;
+			color: white;
+		}
+		.form1 div{
+			padding: 2%;
+			display: block;
+			position: relative;
+			left: 5%;
+			box-sizing: border-box;
+			align-content: center;
+		}
+		.form1 div input{
+				
+    		font-size: 1rem;
+    		border-radius: 30px;
+    		background: #d9ffb3;
+    		outline: none;
+    		transition: .3s;
+		}
+		.form1 div textarea{
+			display: block;
+    		padding: 15px 20px;
+    		font-size: 1rem;
+    		border-radius: 30px;
+    		background: #d9ffb3;
+    		outline: none;
+    		transition: .3s;
+		}
+		.form1 div input:hover{
+			background: #8cff1a;
+			transition: 0.3s ease;
+			color: white;
+		}
+		.form1 div textarea:hover{
+			background: #8cff1a;
+			transition: 0.3s ease;
+			color: white;
+		}
+		.onet{
+			background: #f4f4f4;
+			width: 33%;
+			float: left;
+			display: block;
+		}
+		.twot{
+			background: #f4f4f4;
+			width: 33%;
+			float: left;
+			display: block;
+		}
+		.thret{
+			background: #f4f4f4;
+			width: 33%;
+			float: left;
+			display: block;
+		}
+		.btnsc {
+    		display: inline-block;
+    		position: relative;
+    		top: 10px;
+    		left: 20px;
+    		padding: 15px 20px;
+    		text-align: center;
+    		border: none;
+    		background: #00ff80;
+    		outline: none;
+    		border-radius: 30px;
+    		font-size: 1.2rem;
+    		color: #FFF;
+    		cursor: pointer;
+    		transition: .3s;
+		}
+
+		.btnsc:hover {
+    		transform: translateY(-5px);
+    		background: #00cc66;
+		}		
+	</style>
+	<script type="text/javascript" src="beta3.js">
+		
+	</script>
+</head>
+<body>
+	<form method="POST" action="http://localhost/beta1/beta3.php">
+		<div ng-controller="MainCtrl">
+		<div class="form1">
+			
+				<b style="position: relative;left:7%;">School:<input type="text" name="scho" size="83"></b><br/>
+				<div class="onet">
+				ATL Code:<input type="text" name="atl" />
+				Password:<input type="password" name="pass1" class="tabr1" required/>
+				UDISE:<input type="text" name="udise" />
+				Phone:<input type="text" name="phone" class="tabr1" />
+                E-mail:<input type="text" name="email" class="tabr1" />
+				Principal:<input type="text" name="princi" class="tabr1" />
+				WhatsApp:<input type="text" name="wapp" class="tabr1"/>
+				Contact Name:<input type="text" name="cname" class="tabr1"/>
+				Sanction Date:<input type="date" name="sandate" class="tabr1"/>
+				State:<input type="text" name="state" class="tabr1"/>
+				District:<input type="text" name="dist" class="tabr1"/>
+				Place:<input type="text" name="place" class="tabr1"/>
+				Org Vendor:<input type="text" name="orgven" class="tabr1"/>
+			</div>
+			<div class="twot">
+				Address:<br/><textarea name="add1" rows="4"></textarea>
+				PFMS:<input type="text" name="pfms"class="tabr2"required/>
+				Password:<input type="password" name="pass2"class="tabr2"required/>
+				PFMS OP:<input type="text" name="pfmsop"class="tabr2"/>
+				Pswd:<input type="password" name="pass3"class="tabr2"/>
+				PFMS AP:<input type="text" name="pfmsap"class="tabr2"/>
+				Pswd:<input type="password" name="pass4"class="tabr2"/>
+				GeM:<input type="text" name="gem"class="tabr2"/>
+				Pswd:<input type="password" name="pass5"class="tabr2"/>
+				Gov Email:<input type="text" name="govmail"class="tabr2"/>
+				Pswd:<input type="password" name="pass6"class="tabr2"/>
+			</div>
+			<div class="thret">
+				Pkg:<input type="text" name="pkg"class="tabr3"/>
+				List:<input type="text" name="list"class="tabr3"/>
+				Query:<br/><textarea name="query"rows="4"></textarea>
+				Latest:<textarea name="latest" rows="4"></textarea>
+				Path Docs:<input type="text" name="pathdoc"class="tabr3"/>
+				Path 1:<textarea name="path1" rows="4"></textarea>
+				<button class="btnsc">Save</button>
+				<button class="btnsc">Cancel</button>
+			</div>
+			</div>
+	</form>
+</div>
+</body>
+</html>

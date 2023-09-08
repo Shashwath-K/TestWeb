@@ -1,0 +1,114 @@
+
+.form-popup {
+  display:none;
+  position:fixed;
+  top: 7%;
+  left: 35%;
+  right: 20%;
+  z-index: 9;
+  font-family: "Titillium Web";
+  text-decoration: none;
+  align-content: center;
+  transition: 3s ease;
+  background-color: none; 
+}
+
+.form-container {
+  width: 70%;
+  max-height: 600px;
+  padding: 50px;
+  background: linear-gradient(-20deg,#fc6067 0%,#ff9a44 100%);
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+.form-container .input-group .tab1{
+  display: block;
+  width: 100%;
+}
+.form-container .input-group input {
+    width: 100%;
+    height: 10%;
+    border: 2px solid #e7e7e7;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    transition: .3s;
+}
+
+.form-container .input-group input:focus, .container .login-email .input-group input:valid {
+    border-color: #a29bfe;
+}
+
+.form-container .input-group .btn {
+    display: block;
+    width: 50%;
+    padding: 15px;
+    margin-top: 5%;
+    margin-left: 22%;
+    height: 10%;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+  border-radius: 30px;
+  width: 45%;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.form-container .input-group {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-container .input-group input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: white;
+  border: transparent;
+  color: white;
+}
+
+.form-container .input-group input:hover{
+  background: #ffbf00  ;
+  transition: 0.6s ease;
+}
+@media (max-width: 30px) {
+   .input-group input {
+    margin: 10px 0;
+  }
+  
+  .form-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
